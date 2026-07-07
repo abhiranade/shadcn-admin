@@ -20,15 +20,15 @@ export const labels = [
     label: 'Feature',
   },
   {
-    value: 'documentation',
-    label: 'Documentation',
+    value: 'story',
+    label: 'Story',
   },
 ]
 
 export const statuses = [
   {
-    label: 'Backlog',
-    value: 'backlog' as const,
+    label: 'Pending',
+    value: 'pending' as const,
     icon: HelpCircle,
   },
   {

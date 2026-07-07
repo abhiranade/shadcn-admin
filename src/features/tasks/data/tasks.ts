@@ -5,17 +5,17 @@ faker.seed(12345)
 
 export const tasks = Array.from({ length: 100 }, () => {
   const statuses = [
-    'todo',
+    'pending',
     'in progress',
     'done',
     'canceled',
-    'backlog',
+    'pending',
   ] as const
-  const labels = ['bug', 'feature', 'documentation'] as const
+  const labels = ['bug', 'feature', 'story'] as const
   const priorities = ['low', 'medium', 'high'] as const
 
   return {
-    id: `TASK-${faker.number.int({ min: 1000, max: 9999 })}`,
+    id: `TASK-${faker.number.int({ min: 100, max: 999 })}`,
     title: faker.lorem.sentence({ min: 5, max: 15 }),
     status: faker.helpers.arrayElement(statuses),
     label: faker.helpers.arrayElement(labels),
