@@ -8,6 +8,7 @@ import {
   IconStripe,
   IconGmail,
   IconMedium,
+  IconMsTeams,
   IconSkype,
   IconDocker,
   IconGithub,
@@ -106,5 +107,11 @@ export const apps = [
     logo: <IconWhatsapp />,
     connected: false,
     desc: 'Easily integrate WhatsApp for direct messaging.',
+  },
+  {
+    name: 'MS Teams',
+    logo: <IconMsTeams />,
+    connected: false,
+    desc: 'Chat, meet, and collaborate with your team on MS Teams.',
   },
 ]
